@@ -21,7 +21,7 @@ class App extends React.Component {
     return (
       <div className='App'>
         <ProductList addProduct={this.addProduct}/>
-        <Checkout />
+        <Checkout total={total}/>
         <Cart addedProducts={this.state.addedProducts} tax={tax} subtotal={subtotal} total={total}/>
       </div>
     )
