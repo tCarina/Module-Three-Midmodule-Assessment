@@ -5,9 +5,9 @@ import ProductItem from './productItem'
 
 
 
-const ProductList = () => {
+const ProductList = ({addProduct}) => {
     const products = productData.map(product => {
-        return <ProductItem key={product.id} product={product}/>
+        return <ProductItem key={product.id} product={product} addProduct={addProduct}/>
     })
     return(
         <div className="Products">
